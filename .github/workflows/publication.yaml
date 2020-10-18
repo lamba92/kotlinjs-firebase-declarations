@@ -20,3 +20,4 @@ jobs:
         env:
           BINTRAY_USERNAME: ${{secrets.BINTRAYUSERNAME}}
           BINTRAY_API_KEY: ${{secrets.BINTRAYAPIKEY}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
