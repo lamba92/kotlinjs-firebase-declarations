@@ -8,7 +8,7 @@ It is build with Kotlin 1.4.10 with both legacy and IR compiler and uses Gradle 
 
 Those declarations have not been tested. Any PR is welcome!
 
-## Usage
+## Usage [ ![Download](https://api.bintray.com/packages/lamba92/com.github.lamba92/kotlinjs-firebase-declarations/images/download.svg) ](https://bintray.com/lamba92/com.github.lamba92/kotlinjs-firebase-declarations/_latestVersion)
 
 To initialize an App use [`firebase.initializeApp()`](/packages/core/src/main/kotlin/firebase/index.firebase.module_firebase.kt#L38) then call the methods available on it.
  
