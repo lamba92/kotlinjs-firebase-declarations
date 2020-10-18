@@ -48,7 +48,7 @@ open class KotlinJsFirebaseDeclarationsGradlePlugin : Plugin<Project> {
                     url = uri("https://maven.pkg.github.com/lamba92/${rootProject.name}")
                     credentials {
                         username = searchPropertyOrNull("gpr.user", "USERNAME", "BINTRAY_USERNAME")
-                        password = searchPropertyOrNull("gpr.key", "TOKEN", "GPT_TOKEN", "GITHUB_TOKEN")
+                        password = searchPropertyOrNull("GITHUB_TOKEN")
                     }
                 }
             }
