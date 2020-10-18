@@ -16,7 +16,7 @@ jobs:
       - name: Make gradle executable
         run: chmod +x gradlew
       - name: Build with Gradle
-        run: ./gradlew bintrayUpload
+        run: ./gradlew bintrayUpload publishAllPublicationsToGitHubPackagesRepository
         env:
           BINTRAY_USERNAME: ${{secrets.BINTRAYUSERNAME}}
           BINTRAY_API_KEY: ${{secrets.BINTRAYAPIKEY}}

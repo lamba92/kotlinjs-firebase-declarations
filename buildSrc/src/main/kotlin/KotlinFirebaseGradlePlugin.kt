@@ -5,8 +5,11 @@ import org.gradle.api.publish.maven.plugins.MavenPublishPlugin
 import org.jetbrains.kotlin.gradle.dsl.KotlinJsProjectExtension
 import org.jetbrains.kotlin.gradle.plugin.KotlinJsPluginWrapper
 import com.github.lamba92.gradle.utils.prepareForPublication
+import com.github.lamba92.gradle.utils.searchPropertyOrNull
 import org.gradle.api.publish.PublishingExtension
 import org.gradle.api.publish.maven.MavenPublication
+import org.gradle.api.publish.maven.internal.artifact.FileBasedMavenArtifact
+import org.gradle.api.publish.tasks.GenerateModuleMetadata
 import org.gradle.jvm.tasks.Jar
 import org.gradle.kotlin.dsl.*
 
@@ -40,13 +43,25 @@ open class KotlinJsFirebaseDeclarationsGradlePlugin : Plugin<Project> {
             }
         }
 
-        publishing.publications {
-            create<MavenPublication>(project.name) {
-                from(components["kotlin"])
-                artifact(tasks.named<Jar>("sourcesJar"))
-                groupId = project.group as String
-                artifactId = "${rootProject.name}-${project.name}"
-                version = project.version as String
+        publishing {
+            repositories {
+                maven {
+                    name = "GitHubPackages"
+                    url = uri("https://maven.pkg.github.com/lamba92/${rootProject.name}")
+                    credentials {
+                        username = searchPropertyOrNull("gpr.user", "USERNAME", "BINTRAY_USERNAME")
+                        password = searchPropertyOrNull("gpr.key", "TOKEN", "GPT_TOKEN", "GITHUB_TOKEN")
+                    }
+                }
+            }
+            publications {
+                create<MavenPublication>(project.name) {
+                    from(components["kotlin"])
+                    artifact(tasks.named<Jar>("sourcesJar"))
+                    groupId = project.group as String
+                    artifactId = "${rootProject.name}-${project.name}"
+                    version = project.version as String
+                }
             }
         }
 
