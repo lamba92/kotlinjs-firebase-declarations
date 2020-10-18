@@ -1,17 +1,15 @@
+import com.github.lamba92.gradle.utils.prepareForPublication
+import com.github.lamba92.gradle.utils.searchPropertyOrNull
 import com.jfrog.bintray.gradle.BintrayPlugin
 import org.gradle.api.Plugin
 import org.gradle.api.Project
-import org.gradle.api.publish.maven.plugins.MavenPublishPlugin
-import org.jetbrains.kotlin.gradle.dsl.KotlinJsProjectExtension
-import org.jetbrains.kotlin.gradle.plugin.KotlinJsPluginWrapper
-import com.github.lamba92.gradle.utils.prepareForPublication
-import com.github.lamba92.gradle.utils.searchPropertyOrNull
 import org.gradle.api.publish.PublishingExtension
 import org.gradle.api.publish.maven.MavenPublication
-import org.gradle.api.publish.maven.internal.artifact.FileBasedMavenArtifact
-import org.gradle.api.publish.tasks.GenerateModuleMetadata
+import org.gradle.api.publish.maven.plugins.MavenPublishPlugin
 import org.gradle.jvm.tasks.Jar
 import org.gradle.kotlin.dsl.*
+import org.jetbrains.kotlin.gradle.dsl.KotlinJsProjectExtension
+import org.jetbrains.kotlin.gradle.plugin.KotlinJsPluginWrapper
 
 @Suppress("unused")
 open class KotlinJsFirebaseDeclarationsGradlePlugin : Plugin<Project> {
@@ -68,6 +66,7 @@ open class KotlinJsFirebaseDeclarationsGradlePlugin : Plugin<Project> {
         prepareForPublication()
 
     }
+
 
 }
 

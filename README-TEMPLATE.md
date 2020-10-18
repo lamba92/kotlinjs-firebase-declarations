@@ -16,6 +16,8 @@ To import in your Gradle project:
 ```kotlin
 repositories {
     maven("https://dl.bintray.com/lamba92/com.github.lamba92")
+    // or
+    maven("https://maven.pkg.github.com/lamba92/kotlinjs-firebase-declarations")
 }
 
 dependenceis {
