@@ -20,7 +20,7 @@ repositories {
     maven("https://maven.pkg.github.com/lamba92/kotlinjs-firebase-declarations")
 }
 
-dependenceis {
+dependencies {
 
     val kotlinJsFirebaseDeclarationsVersion: String by project 
     implementation("com.github.lamba92", "kotlinjs-firebase-declarations-analytics", kotlinJsFirebaseDeclarationsVersion)
