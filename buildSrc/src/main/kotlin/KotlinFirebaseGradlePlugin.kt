@@ -27,11 +27,11 @@ open class KotlinJsFirebaseDeclarationsGradlePlugin : Plugin<Project> {
             sourceSets {
                 val main by getting {
                     dependencies {
-                        if (project.name == "core") {
+                        if (project.name == "app") {
                             val firebaseJsVersion: String by project
                             api(npm("firebase", firebaseJsVersion))
                         } else
-                            api(project(":core"))
+                            api(project(":app"))
                     }
                 }
                 tasks.create<Jar>("sourcesJar") {

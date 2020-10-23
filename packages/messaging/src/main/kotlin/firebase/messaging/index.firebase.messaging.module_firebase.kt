@@ -1,4 +1,4 @@
-@file:JsModule("firebase")
+@file:JsModule("firebase/messaging")
 @file:JsNonModule
 @file:JsQualifier("messaging")
 @file:Suppress(

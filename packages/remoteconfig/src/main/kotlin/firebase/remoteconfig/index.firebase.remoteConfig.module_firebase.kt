@@ -1,6 +1,6 @@
-@file:JsModule("firebase")
+@file:JsModule("firebase/remoteconfig")
 @file:JsNonModule
-@file:JsQualifier("remoteConfig")
+@file:JsQualifier("remoteconfig")
 @file:Suppress(
     "INTERFACE_WITH_SUPERCLASS",
     "OVERRIDING_FINAL_MEMBER",

@@ -1,4 +1,4 @@
-@file:JsModule("firebase")
+@file:JsModule("firebase/auth")
 @file:JsNonModule
 @file:JsQualifier("auth")
 @file:Suppress(

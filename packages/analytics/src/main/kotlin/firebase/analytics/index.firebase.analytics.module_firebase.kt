@@ -1,4 +1,4 @@
-@file:JsModule("firebase")
+@file:JsModule("firebase/analytics")
 @file:JsNonModule
 @file:JsQualifier("analytics")
 @file:Suppress(

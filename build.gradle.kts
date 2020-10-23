@@ -1,6 +1,6 @@
 allprojects {
     group = "com.github.lamba92"
-    version = System.getenv("GITHUB_REF")?.split("/")?.last() ?: "0.2.4"
+    version = System.getenv("GITHUB_REF")?.split("/")?.last() ?: "0.2.5"
     repositories {
         jcenter()
         mavenCentral()

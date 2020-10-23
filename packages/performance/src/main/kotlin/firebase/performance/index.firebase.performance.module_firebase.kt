@@ -1,4 +1,4 @@
-@file:JsModule("firebase")
+@file:JsModule("firebase/performance")
 @file:JsNonModule
 @file:JsQualifier("performance")
 @file:Suppress(
