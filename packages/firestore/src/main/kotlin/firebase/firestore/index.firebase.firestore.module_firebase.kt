@@ -253,7 +253,7 @@ open external class DocumentSnapshot<T> {
     open var ref: DocumentReference<T>
     open var id: String
     open var metadata: SnapshotMetadata
-    open fun data(options: SnapshotOptions? = definedExternally): Map<String, Any?>?
+    open fun data(options: SnapshotOptions? = definedExternally): T?
     open fun get(fieldPath: String, options: SnapshotOptions? = definedExternally): Any?
     open fun get(fieldPath: FieldPath, options: SnapshotOptions? = definedExternally): Any?
     open fun isEqual(other: DocumentSnapshot<T>): Boolean
