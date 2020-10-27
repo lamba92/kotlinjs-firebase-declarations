@@ -214,7 +214,7 @@ open external class DocumentReference<T> {
     open var path: String
     open fun collection(collectionPath: String): CollectionReference<DocumentData>
     open fun isEqual(other: DocumentReference<T>): Boolean
-    open fun set(data: Any, options: SetOptions? = definedExternally): Promise<Unit>
+    open fun set(data: T, options: SetOptions? = definedExternally): Promise<Unit>
     open fun update(data: Map<String, Any?>): Promise<Unit>
     open fun update(field: String, value: Any, vararg moreFieldsAndValues: Any): Promise<Unit>
     open fun update(field: FieldPath, value: Any, vararg moreFieldsAndValues: Any): Promise<Unit>
