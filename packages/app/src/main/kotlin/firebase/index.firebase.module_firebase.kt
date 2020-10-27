@@ -1,4 +1,4 @@
-@file:JsModule("firebase")
+@file:JsModule("firebase/app")
 @file:JsNonModule
 @file:Suppress(
     "INTERFACE_WITH_SUPERCLASS",

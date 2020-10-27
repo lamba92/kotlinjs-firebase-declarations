@@ -24,8 +24,8 @@ dependencies {
 
     val kotlinJsFirebaseDeclarationsVersion: String by project 
     implementation("com.github.lamba92", "kotlinjs-firebase-declarations-analytics", kotlinJsFirebaseDeclarationsVersion)
+    implementation("com.github.lamba92", "kotlinjs-firebase-declarations-app", kotlinJsFirebaseDeclarationsVersion)
     implementation("com.github.lamba92", "kotlinjs-firebase-declarations-auth", kotlinJsFirebaseDeclarationsVersion)
-    implementation("com.github.lamba92", "kotlinjs-firebase-declarations-core", kotlinJsFirebaseDeclarationsVersion)
     implementation("com.github.lamba92", "kotlinjs-firebase-declarations-database", kotlinJsFirebaseDeclarationsVersion)
     implementation("com.github.lamba92", "kotlinjs-firebase-declarations-firestore", kotlinJsFirebaseDeclarationsVersion)
     implementation("com.github.lamba92", "kotlinjs-firebase-declarations-functions", kotlinJsFirebaseDeclarationsVersion)
@@ -45,8 +45,8 @@ kotlin {
 
             val kotlinJsFirebaseDeclarationsVersion: String by project 
             implementation("com.github.lamba92:kotlinjs-firebase-declarations-analytics:$kotlinJsFirebaseDeclarationsVersion")
+            implementation("com.github.lamba92:kotlinjs-firebase-declarations-app:$kotlinJsFirebaseDeclarationsVersion")
             implementation("com.github.lamba92:kotlinjs-firebase-declarations-auth:$kotlinJsFirebaseDeclarationsVersion")
-            implementation("com.github.lamba92:kotlinjs-firebase-declarations-core:$kotlinJsFirebaseDeclarationsVersion")
             implementation("com.github.lamba92:kotlinjs-firebase-declarations-database:$kotlinJsFirebaseDeclarationsVersion")
             implementation("com.github.lamba92:kotlinjs-firebase-declarations-firestore:$kotlinJsFirebaseDeclarationsVersion")
             implementation("com.github.lamba92:kotlinjs-firebase-declarations-functions:$kotlinJsFirebaseDeclarationsVersion")
